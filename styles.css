@@ -424,7 +424,7 @@ section#projects h2 {
 section#projects .project-container {
   display: -ms-grid;
   display: grid;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 @media (min-width: 700px) {
@@ -442,6 +442,7 @@ section#projects .project-container {
 }
 
 section#projects .project {
+  border-radius: 15px;
   position: relative;
   background-color: #282c31;
   z-index: 1;
@@ -478,7 +479,7 @@ section#projects .project__image::before {
   top: 0;
   width: 100%;
   height: 300px;
-  background-color: rgba(30, 123, 146, 0.205);
+  background-color: rgba(20, 60, 70, 0.253);
   z-index: 200;
 }
 
