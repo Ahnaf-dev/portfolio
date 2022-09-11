@@ -39,7 +39,7 @@ section {
   padding: 5rem 0;
 
   @media (min-width: 800px) {
-    padding: 10rem 0;
+    padding: 5rem 0;
   }
 }
 
@@ -316,7 +316,7 @@ section#intro {
 section#technologies {
   background-color: $dark;
   @media (min-width: 800px) {
-    padding: 20rem 0;
+    padding: 10rem 0;
   }
   h2 {
     font-size: clamp(3rem, 5vw, 6rem);
@@ -400,13 +400,13 @@ section#projects {
         left: 0;
         top: 0;
         width: 100%;
-        height: 300px;
+        height: 40rem;
         background-color: rgba(20, 60, 70, 0.253);
         z-index: 200;
       }
       img {
         width: 100%;
-        height: 30rem;
+        height: 40rem;
         max-height: 40rem;
         position: relative;
         // object-fit: cover;
@@ -517,7 +517,10 @@ section#contact {
     textarea {
       width: 100%;
       padding: 1rem 2rem;
-      outline: $accent;
+      outline: 1px solid $accent;
+      border: none;
+      background-color: transparent;
+      color: white;
     }
   }
   button {
