@@ -563,3 +563,17 @@ footer {
   padding: 2rem;
   text-align: center;
 }
+
+.swiper {
+  width: 100%;
+  max-width: 500px;
+  height: 40rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper {
+    max-width: 390px;
+    width: 100%;
+    height: 40rem;
+  }
+}

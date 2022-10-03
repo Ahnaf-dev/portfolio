@@ -1,6 +1,16 @@
 const toggle = document.querySelector(".toggle");
 const sections = document.querySelectorAll("section");
 
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  speed: 400,
+  grabCursor: true,
+});
+
 const form = document.forms[0];
 toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
