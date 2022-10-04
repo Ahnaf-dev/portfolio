@@ -425,20 +425,8 @@ section#projects .project-container {
   display: -ms-grid;
   display: grid;
   gap: 4rem;
-}
-
-@media (min-width: 700px) {
-  section#projects .project-container {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1200px) {
-  section#projects .project-container {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 }
 
 section#projects .project {
@@ -670,13 +658,12 @@ footer {
 
 .swiper {
   width: 100%;
-  max-width: 500px;
   height: 40rem;
+  margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
   .swiper {
-    max-width: 390px;
     width: 100%;
     height: 40rem;
   }
