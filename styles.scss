@@ -101,10 +101,17 @@ header {
 
 header.down {
   transform: translateY(-100%);
+
+  nav {
+    visibility: hidden !important;
+  }
 }
 
 header.up {
   transform: translateY(0);
+  nav {
+    visibility: visible;
+  }
 }
 
 header .container {

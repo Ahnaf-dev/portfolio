@@ -104,9 +104,17 @@ header.down {
           transform: translateY(-100%);
 }
 
+header.down nav {
+  visibility: hidden !important;
+}
+
 header.up {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+header.up nav {
+  visibility: visible;
 }
 
 header .container {
