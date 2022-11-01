@@ -86,14 +86,27 @@ section {
   background-color: #13c1e9;
 }
 
-@media (min-width: 800px) {
-  header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: rgba(36, 36, 36, 0.151);
-  }
+header {
+  background-color: rgba(36, 36, 36, 0.151);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  z-index: 999;
+}
+
+header.down {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+header.up {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 header .container {

@@ -1,6 +1,6 @@
 const toggle = document.querySelector(".toggle");
 const sections = document.querySelectorAll("section");
-
+const header = document.querySelector("header");
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
@@ -35,4 +35,21 @@ form.addEventListener("submit", async (e) => {
   document.querySelector("input#name").value = "";
   document.querySelector("input#email").value = "";
   document.querySelector("textarea#message").value = "";
+});
+
+// header
+
+let prevY;
+window.addEventListener("scroll", (e) => {
+  let y = window.pageYOffset;
+
+  if (prevY > y) {
+    header.classList.add("up");
+    header.classList.remove("down");
+  } else {
+    header.classList.remove("up");
+    header.classList.add("down");
+  }
+
+  prevY = y;
 });
