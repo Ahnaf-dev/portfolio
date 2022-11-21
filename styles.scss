@@ -396,6 +396,7 @@ section#projects {
     flex-direction: column;
 
     &__logos {
+      flex-wrap: wrap;
       width: 100%;
       margin-bottom: 1.5rem;
       display: flex;

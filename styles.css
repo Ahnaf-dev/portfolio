@@ -465,6 +465,8 @@ section#projects .project {
 }
 
 section#projects .project__logos {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   margin-bottom: 1.5rem;
   display: -webkit-box;
